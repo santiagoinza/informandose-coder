@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+
+}
+
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.ul {
+    list-style-type: none;
+
+
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+
+
+}
+
+.grilla {
+    display: flex;
+    padding: 5rem;
+    padding-left: 3rem;
+    gap: 1rem;
+}
+
+.titulo-politica {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.parrafo-politica {
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-politica {
+    display: inline-block;
+    font-size: .75rem;
+    padding: .5rem 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid;
+    border-radius: 3rem;
+
+}
+
+.section {
+    display: flex;
+    padding-left: 9rem;
+    gap: 7rem;
+
+}
+
+.foto-politica {
+    padding: 1rem;
+}
+
+.opinion-titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.internacionales-titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+.parrafo-internacional {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.opinion {
+    margin-left: 2rem;
+    border: solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.internacionales {
+    margin-right: 9rem;
+    border: solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: black;
+    padding: 4rem;
+
+}
+
+.contenedor {
+    gap: .5rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        " nacionales  provincias  provincias"
+        "  ciudad   ciudad ciudad"
+        " semana semana destacado"
+}
+
+.uno h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .5rem;
+    text-align: center;
+    grid-area: nacionales;
+}
+
+.dos h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .5rem;
+    text-align: center;
+    grid-area: provincias;
+
+}
+
+
+
+.cuatro h2 {
+
+    grid-area: Sociales;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: .5rem;
+}
+
+
+.seis {
+
+    grid-area: ciudad;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    column-count: 2;
+    padding: .5rem;
+
+
+}
+
+
+.hijo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    border: solid rgb(230, 166, 88);
+    border-radius: 1rem;
+}
+
+.siete {
+    grid-area: semana;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .5rem;
+    column-count: 2;
+
+}
+
+.ocho {
+    grid-area: destacado;
+
+}
+
+.header-deportes {
+    padding: 2rem;
+    color: black;
+
+
+}
+
+.main-deportes {
+    padding: 2rem;
+}
+
+.titulo-main-deportes {
+    text-align: center;
+    font-size: 7rem;
+}
+
+.titulo-main-deportes-dos {
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+@media (min-widht: 430px) and (max-widht: 1300px) {
+    .main-deportes .titulo-main-deportes .titulo-main-deportes-dos {
+        text-align: center;
+        padding: 2rem;
+
+    }
+}
+
+    @media (min-widht: 400px) and (max-widht: 900px) {
+        .titulo-main-deportes {
+        font-size: 4rem;
+    }
+    }
+
+        
+
+    @media (min-widht: 400px) and (max-widht: 900px) {
+        .titulo-main-deportes-dos  {
+     font-size: 3rem;
+    }
+
+}
